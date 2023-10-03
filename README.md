@@ -124,7 +124,7 @@ For Linux, execute: **python3 (...).py**
 9. Examine the influence of beard coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_beard.py"**
 10. Examine the influence of fringe coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_fringe.py"**
 ### Contact
-If you have any questions, please feel free to contact me through email (shuoli@student.ethz.ch or shuoli199909@outlook.com)!
+If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
 ## Authors and acknowledgment
 This research project was supervised by Dr. Mohamed Elgendi and Prof. Dr. Carlo Menon. The code was developed by Shuo Li. Also thank to all of the BMHT members and providers of datasets for the continuous help!
 ## License - MIT License.
