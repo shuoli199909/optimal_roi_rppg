@@ -102,6 +102,7 @@ optimal_roi_rppg
        ├─ main_comparison_fringe.py
        ├─ main_illumination_rank.py
        └─ main_motion_rank.py
+       └─ main_motion_stack.py
        └─ main_simple.py
 ```
 ## Datasets
@@ -123,6 +124,7 @@ For Linux, execute: **python3 (...).py**
 8. Compare the ROI performance under different illumination levels: **python "./visualization/main_illumination_rank.py"**
 9. Examine the influence of beard coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_beard.py"**
 10. Examine the influence of fringe coverage on the performance of relevant facial ROIs: **python "./visualization/main_comparison_fringe.py"**
+11. Generate the stacked bar chart of overall evaluation scores and rank in a descending order: **python "./visualization/main_motion_stack.py"**
 ### Contact
 If you have any questions, please feel free to contact me through email (shuoli199909@outlook.com)!
 ## Authors and acknowledgment
