@@ -102,7 +102,7 @@ optimal_roi_rppg
        ├─ main_comparison_fringe.py
        ├─ main_illumination_rank.py
        └─ main_motion_rank.py
-       └─ main_motion_stack.py
+       └─ main_motion_stackbar.py
        └─ main_simple.py
 ```
 ## Datasets
