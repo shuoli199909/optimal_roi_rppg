@@ -1,0 +1,29 @@
+ROI,epidermal_thickness,dermal_thickness,eRT,dRT,RT
+lower medial forehead,45.76,1176.11,1.55,1.55,1.53
+left lower lateral forehead,39.86,1172.34,1.35,1.54,1.52
+right lower lateral forehead,39.86,1172.34,1.35,1.54,1.52
+glabella,47,1178.64,1.59,1.55,1.53
+upper nasal dorsum,52.19,1475.42,1.77,1.94,1.91
+lower nasal dorsum,61.6,1198.61,2.08,1.58,1.58
+soft triangle,51.44,1477.47,1.74,1.95,1.91
+left ala,51.57,1941.03,1.74,2.56,2.49
+right ala,51.57,1941.03,1.74,2.56,2.49
+nasal tip,59.77,1288,1.68,1.7,1.67
+left lower nasal sidewall,46.7,1969.2,1.58,2.59,2.52
+right lower nasal sidewall,46.7,1969.2,1.58,2.59,2.52
+left mid nasal sidewall,48.45,1746.27,1.64,2.3,2.25
+right mid nasal sidewall,48.45,1746.27,1.64,2.3,2.25
+philtrum,48.07,1196.17,1.63,1.58,1.56
+left upper lip,62.62,1433.49,2.12,1.89,1.87
+right upper lip,62.62,1433.49,2.12,1.89,1.87
+left nasolabial fold,48.91,1250.18,1.65,1.65,1.63
+right nasolabial fold,48.91,1250.18,1.65,1.65,1.63
+left temporal,42.18,1245.77,1.43,1.64,1.61
+right temporal,42.18,1245.77,1.43,1.64,1.61
+left malar,45.73,1040.46,1.55,1.37,1.36
+right malar,45.73,1040.46,1.55,1.37,1.36
+left lower cheek,44.66,1291.26,1.51,1.7,1.67
+right lower cheek,44.66,1291.26,1.51,1.7,1.67
+chin,45.37,1165.77,1.53,1.54,1.52
+left marionette fold,40.87,989.41,1.38,1.3,1.29
+right marionette fold,40.87,989.41,1.38,1.3,1.29
