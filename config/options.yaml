@@ -1,0 +1,282 @@
+# Parameters for preliminary analysis.
+# Author: Shuo Li
+# Date: 2023/05/30
+
+UBFC-rPPG:  # UBFC-rPPG dataset. 
+  url: https://sites.google.com/view/ybenezeth/ubfcrppg
+  dir_dataset: 'E:/dataset/UBFC-rPPG'  # Directory of the dataset.
+  len_window: 6  # Window length in seconds.
+  stride_window: 1  # Window stride in seconds.
+  fps: 30  # Default frames per second.
+  # Face detection and segmentation params.
+  max_num_faces: 1  # Number of target faces.
+  minDetectionCon: 2.0e-1  # Detection confidence
+  minTrackingCon: 5.0e-1  # Tracking confidence
+  list_roi_num: [[10, 109, 108, 151, 337, 338], 
+                 [67, 103, 104, 105, 66, 107, 108, 109], 
+                 [297, 338, 337, 336, 296, 334, 333, 332], 
+                 [151, 108, 107, 55, 8, 285, 336, 337], 
+                 [8, 55, 193, 122, 196, 197, 419, 351, 417, 285], 
+                 [197, 196, 3, 51, 5, 281, 248, 419], 
+                 [4, 45, 134, 220, 237, 44, 1, 274, 457, 440, 363, 275], 
+                 [134, 131, 49, 102, 64, 219, 218, 237, 220], 
+                 [363, 440, 457, 438, 439, 294, 331, 279, 360], 
+                 [5, 51, 45, 4, 275, 281], 
+                 [3, 217, 126, 209, 131, 134], 
+                 [248, 363, 360, 429, 355, 437], 
+                 [188, 114, 217, 236, 196], 
+                 [412, 419, 456, 437, 343], 
+                 [2, 97, 167, 37, 0, 267, 393, 326], 
+                 [97, 165, 185, 40, 39, 37, 167], 
+                 [326, 393, 267, 269, 270, 409, 391], 
+                 [97, 98, 203, 186, 185, 165], 
+                 [326, 391, 409, 410, 423, 327], 
+                 [54, 21, 162, 127, 116, 143, 156, 70, 63, 68], 
+                 [284, 298, 293, 300, 383, 372, 345, 356, 389, 251], 
+                 [126, 100, 118, 117, 116, 123, 147, 187, 205, 203, 129, 209], 
+                 [355, 429, 358, 423, 425, 411, 376, 352, 345, 346, 347, 329], 
+                 [203, 205, 187, 147, 177, 215, 138, 172, 136, 135, 212, 186, 206], 
+                 [423, 426, 410, 432, 364, 365, 397, 367, 435, 401, 376, 411, 425], 
+                 [18, 83, 182, 194, 32, 140, 176, 148, 152, 377, 400, 369, 262, 418, 406, 313], 
+                 [57, 212, 210, 169, 150, 149, 176, 140, 204, 43], 
+                 [287, 273, 424, 369, 400, 378, 379, 394, 430, 432]]
+                # The list containing sequence numbers of selected keypoints of different ROIs. Size = [num_roi].
+  list_roi_name: ['lower medial forehead', 
+                  'left lower lateral forehead', 
+                  'right lower lateral forehead', 
+                  'glabella', 
+                  'upper nasal dorsum', 
+                  'lower nasal dorsum', 
+                  'soft triangle', 
+                  'left ala', 
+                  'right ala', 
+                  'nasal tip', 
+                  'left lower nasal sidewall', 
+                  'right lower nasal sidewall', 
+                  'left mid nasal sidewall', 
+                  'right mid nasal sidewall', 
+                  'philtrum', 
+                  'left upper lip', 
+                  'right upper lip', 
+                  'left nasolabial fold', 
+                  'right nasolabial fold', 
+                  'left temporal', 
+                  'right temporal', 
+                  'left malar', 
+                  'right malar', 
+                  'left lower cheek', 
+                  'right lower cheek', 
+                  'chin', 
+                  'left marionette fold', 
+                  'right marionette fold']
+                 # The list containing names of different ROIs. Size = [num_roi].
+
+
+UBFC-Phys:  # UBFC-Phys dataset.
+  url: https://ieee-dataport.org/open-access/ubfc-phys-2
+  dir_dataset: 'E:/dataset/UBFC-Phys'  # Directory of the dataset.
+  len_window: 6  # Window length in seconds.
+  stride_window: 1  # Window stride in seconds.
+  fps: 35.14  # Default frames per second.
+  # Face detection and segmentation params.
+  max_num_faces: 1  # Number of target faces.
+  minDetectionCon: 3.5e-1  # Detection confidence
+  minTrackingCon: 3.5e-1  # Tracking confidence
+  list_roi_num: [[10, 109, 108, 151, 337, 338], 
+                 [67, 103, 104, 105, 66, 107, 108, 109], 
+                 [297, 338, 337, 336, 296, 334, 333, 332], 
+                 [151, 108, 107, 55, 8, 285, 336, 337], 
+                 [8, 55, 193, 122, 196, 197, 419, 351, 417, 285], 
+                 [197, 196, 3, 51, 5, 281, 248, 419], 
+                 [4, 45, 134, 220, 237, 44, 1, 274, 457, 440, 363, 275], 
+                 [134, 131, 49, 102, 64, 219, 218, 237, 220], 
+                 [363, 440, 457, 438, 439, 294, 331, 279, 360], 
+                 [5, 51, 45, 4, 275, 281], 
+                 [3, 217, 126, 209, 131, 134], 
+                 [248, 363, 360, 429, 355, 437], 
+                 [188, 114, 217, 236, 196], 
+                 [412, 419, 456, 437, 343], 
+                 [2, 97, 167, 37, 0, 267, 393, 326], 
+                 [97, 165, 185, 40, 39, 37, 167], 
+                 [326, 393, 267, 269, 270, 409, 391], 
+                 [97, 98, 203, 186, 185, 165], 
+                 [326, 391, 409, 410, 423, 327], 
+                 [54, 21, 162, 127, 116, 143, 156, 70, 63, 68], 
+                 [284, 298, 293, 300, 383, 372, 345, 356, 389, 251], 
+                 [126, 100, 118, 117, 116, 123, 147, 187, 205, 203, 129, 209], 
+                 [355, 429, 358, 423, 425, 411, 376, 352, 345, 346, 347, 329], 
+                 [203, 205, 187, 147, 177, 215, 138, 172, 136, 135, 212, 186, 206], 
+                 [423, 426, 410, 432, 364, 365, 397, 367, 435, 401, 376, 411, 425], 
+                 [18, 83, 182, 194, 32, 140, 176, 148, 152, 377, 400, 369, 262, 418, 406, 313], 
+                 [57, 212, 210, 169, 150, 149, 176, 140, 204, 43], 
+                 [287, 273, 424, 369, 400, 378, 379, 394, 430, 432]]
+                # The list containing sequence numbers of selected keypoints of different ROIs. Size = [num_roi].
+  list_roi_name: ['lower medial forehead', 
+                  'left lower lateral forehead', 
+                  'right lower lateral forehead', 
+                  'glabella', 
+                  'upper nasal dorsum', 
+                  'lower nasal dorsum', 
+                  'soft triangle', 
+                  'left ala', 
+                  'right ala', 
+                  'nasal tip', 
+                  'left lower nasal sidewall', 
+                  'right lower nasal sidewall', 
+                  'left mid nasal sidewall', 
+                  'right mid nasal sidewall', 
+                  'philtrum', 
+                  'left upper lip', 
+                  'right upper lip', 
+                  'left nasolabial fold', 
+                  'right nasolabial fold', 
+                  'left temporal', 
+                  'right temporal', 
+                  'left malar', 
+                  'right malar', 
+                  'left lower cheek', 
+                  'right lower cheek', 
+                  'chin', 
+                  'left marionette fold', 
+                  'right marionette fold']
+                 # The list containing names of different ROIs. Size = [num_roi].
+
+
+LGI-PPGI:  # LGI-PPGI dataset.
+  url: https://github.com/partofthestars/LGI-PPGI-DB
+  dir_dataset: 'E:/dataset/LGI-PPGI'  # Directory of the dataset.
+  len_window: 6  # Window length in seconds.
+  stride_window: 1  # Window stride in seconds.
+  fps: 25  # Default frames per second.
+  # Face detection and segmentation params.
+  max_num_faces: 1  # Number of target faces.
+  minDetectionCon: 3.5e-1  # Detection confidence
+  minTrackingCon: 3.5e-1  # Tracking confidence
+  list_roi_num: [[10, 109, 108, 151, 337, 338], 
+                 [67, 103, 104, 105, 66, 107, 108, 109], 
+                 [297, 338, 337, 336, 296, 334, 333, 332], 
+                 [151, 108, 107, 55, 8, 285, 336, 337], 
+                 [8, 55, 193, 122, 196, 197, 419, 351, 417, 285], 
+                 [197, 196, 3, 51, 5, 281, 248, 419], 
+                 [4, 45, 134, 220, 237, 44, 1, 274, 457, 440, 363, 275], 
+                 [134, 131, 49, 102, 64, 219, 218, 237, 220], 
+                 [363, 440, 457, 438, 439, 294, 331, 279, 360], 
+                 [5, 51, 45, 4, 275, 281], 
+                 [3, 217, 126, 209, 131, 134], 
+                 [248, 363, 360, 429, 355, 437], 
+                 [188, 114, 217, 236, 196], 
+                 [412, 419, 456, 437, 343], 
+                 [2, 97, 167, 37, 0, 267, 393, 326], 
+                 [97, 165, 185, 40, 39, 37, 167], 
+                 [326, 393, 267, 269, 270, 409, 391], 
+                 [97, 98, 203, 186, 185, 165], 
+                 [326, 391, 409, 410, 423, 327], 
+                 [54, 21, 162, 127, 116, 143, 156, 70, 63, 68], 
+                 [284, 298, 293, 300, 383, 372, 345, 356, 389, 251], 
+                 [126, 100, 118, 117, 116, 123, 147, 187, 205, 203, 129, 209], 
+                 [355, 429, 358, 423, 425, 411, 376, 352, 345, 346, 347, 329], 
+                 [203, 205, 187, 147, 177, 215, 138, 172, 136, 135, 212, 186, 206], 
+                 [423, 426, 410, 432, 364, 365, 397, 367, 435, 401, 376, 411, 425], 
+                 [18, 83, 182, 194, 32, 140, 176, 148, 152, 377, 400, 369, 262, 418, 406, 313], 
+                 [57, 212, 210, 169, 150, 149, 176, 140, 204, 43], 
+                 [287, 273, 424, 369, 400, 378, 379, 394, 430, 432]]
+                # The list containing sequence numbers of selected keypoints of different ROIs. Size = [num_roi].
+  list_roi_name: ['lower medial forehead', 
+                  'left lower lateral forehead', 
+                  'right lower lateral forehead', 
+                  'glabella', 
+                  'upper nasal dorsum', 
+                  'lower nasal dorsum', 
+                  'soft triangle', 
+                  'left ala', 
+                  'right ala', 
+                  'nasal tip', 
+                  'left lower nasal sidewall', 
+                  'right lower nasal sidewall', 
+                  'left mid nasal sidewall', 
+                  'right mid nasal sidewall', 
+                  'philtrum', 
+                  'left upper lip', 
+                  'right upper lip', 
+                  'left nasolabial fold', 
+                  'right nasolabial fold', 
+                  'left temporal', 
+                  'right temporal', 
+                  'left malar', 
+                  'right malar', 
+                  'left lower cheek', 
+                  'right lower cheek', 
+                  'chin', 
+                  'left marionette fold', 
+                  'right marionette fold']
+                 # The list containing names of different ROIs. Size = [num_roi].
+
+
+BUAA-MIHR:  # BUAA-MIHR dataset.
+  url: https://github.com/xilin1991/Large-scale-Multi-illumination-HR-Database
+  dir_dataset: 'E:/dataset/BUAA-MIHR'  # Directory of the dataset.
+  len_window: 6  # Window length in seconds.
+  stride_window: 1  # Window stride in seconds.
+  fps: 30  # Default frames per second.
+  # Face detection and segmentation params.
+  max_num_faces: 1  # Number of target faces.
+  minDetectionCon: 3.5e-1  # Detection confidence
+  minTrackingCon: 3.5e-1  # Tracking confidence
+  list_roi_num: [[10, 109, 108, 151, 337, 338], 
+                 [67, 103, 104, 105, 66, 107, 108, 109], 
+                 [297, 338, 337, 336, 296, 334, 333, 332], 
+                 [151, 108, 107, 55, 8, 285, 336, 337], 
+                 [8, 55, 193, 122, 196, 197, 419, 351, 417, 285], 
+                 [197, 196, 3, 51, 5, 281, 248, 419], 
+                 [4, 45, 134, 220, 237, 44, 1, 274, 457, 440, 363, 275], 
+                 [134, 131, 49, 102, 64, 219, 218, 237, 220], 
+                 [363, 440, 457, 438, 439, 294, 331, 279, 360], 
+                 [5, 51, 45, 4, 275, 281], 
+                 [3, 217, 126, 209, 131, 134], 
+                 [248, 363, 360, 429, 355, 437], 
+                 [188, 114, 217, 236, 196], 
+                 [412, 419, 456, 437, 343], 
+                 [2, 97, 167, 37, 0, 267, 393, 326], 
+                 [97, 165, 185, 40, 39, 37, 167], 
+                 [326, 393, 267, 269, 270, 409, 391], 
+                 [97, 98, 203, 186, 185, 165], 
+                 [326, 391, 409, 410, 423, 327], 
+                 [54, 21, 162, 127, 116, 143, 156, 70, 63, 68], 
+                 [284, 298, 293, 300, 383, 372, 345, 356, 389, 251], 
+                 [126, 100, 118, 117, 116, 123, 147, 187, 205, 203, 129, 209], 
+                 [355, 429, 358, 423, 425, 411, 376, 352, 345, 346, 347, 329], 
+                 [203, 205, 187, 147, 177, 215, 138, 172, 136, 135, 212, 186, 206], 
+                 [423, 426, 410, 432, 364, 365, 397, 367, 435, 401, 376, 411, 425], 
+                 [18, 83, 182, 194, 32, 140, 176, 148, 152, 377, 400, 369, 262, 418, 406, 313], 
+                 [57, 212, 210, 169, 150, 149, 176, 140, 204, 43], 
+                 [287, 273, 424, 369, 400, 378, 379, 394, 430, 432]]
+                # The list containing sequence numbers of selected keypoints of different ROIs. Size = [num_roi].
+  list_roi_name: ['lower medial forehead', 
+                  'left lower lateral forehead', 
+                  'right lower lateral forehead', 
+                  'glabella', 
+                  'upper nasal dorsum', 
+                  'lower nasal dorsum', 
+                  'soft triangle', 
+                  'left ala', 
+                  'right ala', 
+                  'nasal tip', 
+                  'left lower nasal sidewall', 
+                  'right lower nasal sidewall', 
+                  'left mid nasal sidewall', 
+                  'right mid nasal sidewall', 
+                  'philtrum', 
+                  'left upper lip', 
+                  'right upper lip', 
+                  'left nasolabial fold', 
+                  'right nasolabial fold', 
+                  'left temporal', 
+                  'right temporal', 
+                  'left malar', 
+                  'right malar', 
+                  'left lower cheek', 
+                  'right lower cheek', 
+                  'chin', 
+                  'left marionette fold', 
+                  'right marionette fold']
+                 # The list containing names of different ROIs. Size = [num_roi].
