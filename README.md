@@ -20,7 +20,6 @@ This project mainly comprises two parts:
 - opencv_python==4.7.0.72
 - opencv_python_headless==4.5.3.56
 - pandas==1.3.5
-- pyVHR==2.0
 - PyYAML==6.0.1
 - scikit_learn==1.0.2
 - scipy==1.7.3
